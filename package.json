@@ -10,6 +10,7 @@
         "android.sauce.rdc.app.us": "wdio config/saucelabs/wdio.android.rdc.app.conf.ts",
         "android.app": "wdio config/wdio.android.app.conf.ts",
         "android.browser": "wdio config/wdio.android.browser.conf.ts",
+        "android.flutter":"wdio config/wdio.android.flutter.conf.ts",
         "ios.app": "wdio config/wdio.ios.app.conf.ts",
         "ios.sauce.simulators.app.eu": "REGION=eu wdio ./config/saucelabs/wdio.ios.simulators.app.conf.ts",
         "ios.sauce.simulators.app.us": "wdio ./config/saucelabs/wdio.ios.simulators.app.conf.ts",
@@ -48,5 +49,8 @@
         "eslint-plugin-wdio": "^7.19.4",
         "ts-node": "^10.8.0",
         "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "appium-flutter-finder": "^0.1.0"
     }
 }

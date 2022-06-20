@@ -5,7 +5,7 @@ import config from './wdio.shared.local.appium.conf';
 // Specs
 // ============
 config.specs = [
-    './tests/specs/**/app*.spec.ts',
+    './tests/flutterspecs/**/app*.spec.ts',
 ];
 
 // ============
@@ -24,11 +24,11 @@ config.capabilities = [
         'appium:deviceName': 'Pixel_5_API_32',
         'appium:platformVersion': '12.0',
         'appium:orientation': 'PORTRAIT',
-        'appium:automationName': 'UiAutomator2',
+        'appium:automationName': 'Flutter',
         // The path to the app
-        'appium:app': join(process.cwd(), './apps/Android-NativeDemoApp-0.4.0.apk'),
+        'appium:app': join(process.cwd(), './apps/android-real-debug.apk'),
         // @ts-ignore
-        'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
+        // 'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
         'appium:newCommandTimeout': 240,
     },
 ];
